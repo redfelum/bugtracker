@@ -2,6 +2,9 @@
 
 <h1>Listing Logs</h1>
 
-<%= @logs.gsub(/\n/, '<br/>').html_safe  %>
+<% @logs.each do |log| %>
+      <%= log.message.gsub(/\n/, '<br/>').html_safe %>
+<% end %>
+
 
 
