@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :tests
   get 'welcome/index'
   root 'welcome#index'
 
   match '/log/:token' => 'log#index', :via => :get
   match '/log/' => 'log#create', :via => :post
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  match '/errors/:token' => 'errors#index', :via => :get
+  match '/errors/' => 'errors#create', :via => :post
 end

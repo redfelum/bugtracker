@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  params: MyString
+  stack_trace: MyString
+
+two:
+  name: MyString
+  params: MyString
+  stack_trace: MyString

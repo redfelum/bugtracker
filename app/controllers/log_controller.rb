@@ -1,6 +1,5 @@
 class LogController < ApplicationController
 
-  skip_before_action :verify_authenticity_token
 
   def index
     # File.open(File.join("#{Rails.root}/lib", 'lib.rb'), 'a') do |f|
